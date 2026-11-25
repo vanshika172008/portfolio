@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- EDIT SEO META TAGS HERE -->
+  <title>Alex Rivera | Data Analyst Portfolio</title>
+  <meta
+    name="description"
+    content="Data Analyst portfolio showcasing expertise in SQL, Python, Power BI, Tableau, Excel, data cleaning, EDA, and business intelligence projects."
+  />
+  <meta
+    name="keywords"
+    content="Data Analyst, SQL, Python, Power BI, Tableau, Excel, Data Cleaning, EDA, Data Visualization, Portfolio"
+  />
+  <meta name="author" content="Alex Rivera" />
+
+  <!-- Open Graph for Sharing -->
+  <meta property="og:title" content="Alex Rivera | Data Analyst Portfolio" />
+  <meta
+    property="og:description"
+    content="Turning complex datasets into clear business decisions with SQL, Python, Power BI, and Excel."
+  />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome Icons (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- EDIT YOUR BRAND / LOGO TEXT HERE -->
+      <a href="#home" class="brand-logo">
+        <span class="brand-bracket">&lt;</span>Alex<span class="brand-accent">.data</span><span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button
+        class="mobile-menu-btn"
+        id="mobileMenuBtn"
+        aria-label="Toggle Navigation Menu"
+        aria-expanded="false"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HOME / HERO SECTION -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <!-- EDIT AVAILABILITY STATUS HERE -->
+            <span>Open to Data Analyst Opportunities</span>
+          </div>
+
+          <!-- EDIT YOUR NAME HERE -->
+          <h1 class="hero-title">
+            Hi, I&apos;m <span class="gradient-text">Vanshika</span>
+          </h1>
+
+          <!-- EDIT YOUR ROLE & TYPING PHRASES IN script.js -->
+          <div class="typing-wrapper" aria-live="polite">
+            <span class="typing-prefix">Data Analyst &bull;</span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <!-- EDIT YOUR PROFESSIONAL INTRODUCTION HERE -->
+          <p class="hero-description">
+            Detail-oriented Data Analyst skilled in transforming raw datasets into actionable
+            business insights using <strong>SQL</strong>, <strong>Python</strong>,
+            <strong>Power BI</strong>, and <strong>Excel</strong>. Passionate about uncovering
+            trends, automating reporting, and driving data-informed decisions.
+          </p>
+
+          <!-- Primary Hero Skill Pills -->
+          <div class="hero-core-skills">
+            <span><i class="fas fa-database"></i> SQL</span>
+            <span><i class="fab fa-python"></i> Python</span>
+            <span><i class="fas fa-chart-column"></i> Power BI</span>
+            <span><i class="fas fa-table"></i> Excel</span>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <!-- EDIT RESUME PATH IF NEEDED (default: resume.pdf) -->
+            <a href="resume.pdf" download="Alex_Rivera_Resume.pdf" class="btn btn-primary">
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fas fa-folder-open"></i> View Projects
+            </a>
+          </div>
+
+          <!-- EDIT YOUR SOCIAL MEDIA LINKS HERE -->
+          <div class="social-links" aria-label="Social Links">
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/your-username"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="mailto:alex.rivera.analytics@example.com"
+              aria-label="Email"
+              title="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Photograph Frame -->
+        <div class="hero-visual reveal">
+          <div class="profile-frame glass-card">
+            <div class="profile-img-wrapper">
+              <!-- EDIT PROFILE PHOTO PATH HERE (place your photo at images/profile.jpg) -->
+              <img
+                src="images.jpg"
+                alt="Alex Rivera - Data Analyst"
+                class="profile-img"
+              />
+            </div>
+
+            <!-- EDIT QUICK STATS OVERLAY HERE -->
+            <div class="profile-meta">
+              <div class="meta-item">
+                <span class="meta-value gradient-text">7+</span>
+                <span class="meta-label">Analytics Projects</span>
+              </div>
+              <div class="meta-divider"></div>
+              <div class="meta-item">
+                <span class="meta-value gradient-text">SQL &bull; BI</span>
+                <span class="meta-label">Core Stack</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Turning Raw Data Into <span class="gradient-text">Clear Strategy</span></h2>
+          <p class="section-subtitle">
+            <!-- EDIT ABOUT SUBTITLE HERE -->
+            Analytical problem solver bridging technical querying, statistical exploration, and executive storytelling.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main glass-card reveal">
+            <h3>I am Vanshika</h3>
+            <!-- EDIT YOUR ABOUT PARAGRAPHS HERE -->
+            <p>
+              I am a Data Analyst with a strong foundation in querying relational databases,
+              wrangling messy real-world datasets, and building intuitive interactive dashboards.
+              I enjoy taking ambiguous business questions—such as why churn is rising or which
+              campaigns drive profitable retention—and backing answers with verifiable evidence.
+            </p>
+            <p>
+              My academic background in quantitative analysis and business metrics equipped me to
+              approach problems methodically: validate data quality first, explore distributions and
+              correlations objectively, and communicate findings in plain language that stakeholders
+              can act on immediately.
+            </p>
+            <p>
+              <strong>Career Goal:</strong> Contribute to a high-impact analytics or product/business
+              intelligence team where I can streamline reporting workflows, uncover revenue and
+              efficiency opportunities, and grow into a Senior Data Analyst or Analytics Engineer role.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <!-- EDIT HIGHLIGHT CARDS HERE -->
+            <div class="highlight-card glass-card reveal">
+              <div class="highlight-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <h4>Education Foundation</h4>
+                <p>BA(Honours)Political Science With Economics(Minor)</p>
+              </div>
+            </div>
+
+            <div class="highlight-card glass-card reveal">
+              <div class="highlight-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+              <div>
+                <h4>Analytical Rigor</h4>
+                <p>Experienced in anomaly detection, cohort analysis, funnel tracking, and root-cause diagnostics.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card glass-card reveal">
+              <div class="highlight-icon"><i class="fas fa-bullseye"></i></div>
+              <div>
+                <h4>Business-First Mindset</h4>
+                <p>Focused on KPIs that move the needle—margin, retention, conversion, and operational turnaround time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Technical Skills</span>
+          <h2 class="section-title">Data &amp; Analytics <span class="gradient-text">Toolkit</span></h2>
+          <p class="section-subtitle">
+            <!-- EDIT SKILLS SUBTITLE HERE -->
+            Core tools and methodologies used across data extraction, cleaning, analysis, and visualization.
+          </p>
+        </div>
+
+        <!-- EDIT YOUR TECHNICAL SKILLS HERE -->
+        <div class="skills-grid" id="skillsGrid">
+          <div class="skill-card glass-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>Excel</h3>
+            <p>Pivot Tables, XLOOKUP, Power Query, dynamic arrays, statistical functions, and executive summary models.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 92%;"></div></div>
+          </div>
+
+          <div class="skill-card glass-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <span class="skill-level">Advance</span>
+            </div>
+            <h3>SQL</h3>
+            <p>Complex JOINs, CTEs, window functions, aggregations, subqueries, and performance-aware data modeling.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 90%;"></div></div>
+          </div>
+
+          <div class="skill-card glass-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fab fa-python"></i></div>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h3>Python</h3>
+            <p>Data manipulation and analysis with Pandas and NumPy; charting with Matplotlib and Seaborn.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 85%;"></div></div>
+          </div>
+
+          <div class="skill-card glass-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fas fa-chart-column"></i></div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>Power BI</h3>
+            <p>Star-schema data modeling, DAX measures, drill-through reports, bookmarks, and interactive KPI dashboards.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 88%;"></div></div>
+          </div>
+
+          <div class="skill-card glass-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+              <span class="skill-level">Proficient</span>
+            </div>
+            <h3>Tableau</h3>
+            <p>Calculated fields, LOD expressions, interactive filters, parameter actions, and visual storytelling.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 82%;"></div></div>
+          </div>
+
+          <div class="skill-card glass-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fas fa-broom"></i></div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>Data Cleaning</h3>
+            <p>Handling missing values, deduplication, schema standardization, outlier checks, and audit trails.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 92%;"></div></div>
+          </div>
+
+          <div class="skill-card glass-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>Data Visualization</h3>
+            <p>Designing uncluttered charts, clear hierarchy, color accessibility, and decision-ready visual layouts.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 88%;"></div></div>
+          </div>
+
+          <div class="skill-card glass-card reveal">
+            <div class="skill-top">
+              <div class="skill-icon"><i class="fas fa-microscope"></i></div>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>EDA</h3>
+            <p>Exploratory Data Analysis: distribution profiling, segmentation, trend decomposition, and hypothesis testing.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 87%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. MY PROJECTS SECTION (7 PROJECT CARDS) -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">My Projects</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Analytics Work</span></h2>
+          <p class="section-subtitle">
+            <!-- EDIT PROJECTS SUBTITLE HERE -->
+            Seven end-to-end projects covering sales performance, customer retention, financial tracking, and operational analytics.
+          </p>
+        </div>
+
+        <!-- Optional Category Filter Buttons -->
+        <div class="project-filters reveal" role="group" aria-label="Filter projects by tool">
+          <button class="filter-btn active" data-filter="all">All (7)</button>
+          <button class="filter-btn" data-filter="SQL">SQL</button>
+          <button class="filter-btn" data-filter="Python">Python</button>
+          <button class="filter-btn" data-filter="Power BI">Power BI</button>
+          <button class="filter-btn" data-filter="Tableau">Tableau</button>
+          <button class="filter-btn" data-filter="Excel">Excel</button>
+        </div>
+
+        <!-- EDIT YOUR PROJECT DETAILS HERE (Each .project-card is easy to edit, duplicate, or remove) -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- PROJECT 1 -->
+          <article class="project-card glass-card reveal" data-tools="SQL Power BI Excel">
+            <div class="project-image-wrap">
+              <!-- REPLACE SCREENSHOT: images/project1.png -->
+              <img src="Dashboard.jpg" alt="Sales & Revenue Performance Dashboard screenshot" class="project-img" />
+              <span class="project-num">01</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Global Sales &amp; Revenue Performance Dashboard</h3>
+              <p class="project-desc">
+                Analyzed multi-region sales transactions to track revenue growth, profit margins, and regional category performance across product lines.
+              </p>
+              <div class="project-tools">
+                <span>SQL</span>
+                <span>Power BI</span>
+                <span>Excel</span>
+              </div>
+              <div class="project-insight">
+                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong>
+                Top 18% of SKUs generated 64% of gross profit while low-margin bulk discounts eroded Q3 net margin by 4.2%.
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/your-username/sales-revenue-dashboard" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://your-demo-link-1.example.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card glass-card reveal" data-tools="Python SQL EDA">
+            <div class="project-image-wrap">
+              <!-- REPLACE SCREENSHOT: images/project2.png -->
+              <img src="images/project2.png" alt="Customer Churn Analysis screenshot" class="project-img" />
+              <span class="project-num">02</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Subscription Customer Churn &amp; Retention Study</h3>
+              <p class="project-desc">
+                Conducted cohort retention and exploratory data analysis on subscriber behavior, billing intervals, and support ticket volume.
+              </p>
+              <div class="project-tools">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>EDA</span>
+              </div>
+              <div class="project-insight">
+                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong>
+                Users experiencing two or more unresolved support tickets in their first 30 days churned at 2.6x the baseline rate.
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/your-username/customer-churn-analysis" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://your-demo-link-2.example.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card glass-card reveal" data-tools="Power BI SQL">
+            <div class="project-image-wrap">
+              <!-- REPLACE SCREENSHOT: images/project3.png -->
+              <img src="images/project3.png" alt="E-Commerce Funnel & Conversion Analytics screenshot" class="project-img" />
+              <span class="project-num">03</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">E-Commerce Funnel &amp; Checkout Drop-off Tracker</h3>
+              <p class="project-desc">
+                Modeled customer journey stages from product view to cart and checkout completion across mobile and desktop devices.
+              </p>
+              <div class="project-tools">
+                <span>Power BI</span>
+                <span>SQL</span>
+                <span>Data Cleaning</span>
+              </div>
+              <div class="project-insight">
+                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong>
+                Mobile checkout saw a 38% drop-off at shipping selection, pointing to a high-leverage UX and payment optimization target.
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/your-username/ecommerce-funnel-analytics" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://your-demo-link-3.example.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4 -->
+          <article class="project-card glass-card reveal" data-tools="Excel Data Cleaning">
+            <div class="project-image-wrap">
+              <!-- REPLACE SCREENSHOT: images/project4.png -->
+              <img src="images/project4.png" alt="Financial Expense & Budget Variance Model screenshot" class="project-img" />
+              <span class="project-num">04</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Department Budget vs. Actuals Variance Model</h3>
+              <p class="project-desc">
+                Built a structured Excel workbook using Power Query and dynamic formulas to reconcile monthly departmental spend against forecasts.
+              </p>
+              <div class="project-tools">
+                <span>Excel</span>
+                <span>Data Cleaning</span>
+                <span>Data Visualization</span>
+              </div>
+              <div class="project-insight">
+                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong>
+                Automated monthly data prep saved ~6 hours of manual spreadsheet work and flagged recurring vendor overruns early.
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/your-username/budget-variance-model" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://your-demo-link-4.example.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5 -->
+          <article class="project-card glass-card reveal" data-tools="Tableau SQL">
+            <div class="project-image-wrap">
+              <!-- REPLACE SCREENSHOT: images/project5.png -->
+              <img src="images/project5.png" alt="Supply Chain & Delivery Lead Time Analysis screenshot" class="project-img" />
+              <span class="project-num">05</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Supply Chain Lead Time &amp; Fulfillment Analytics</h3>
+              <p class="project-desc">
+                Evaluated warehouse dispatch times, carrier transit delays, and regional stockout frequencies using SQL queries and Tableau views.
+              </p>
+              <div class="project-tools">
+                <span>Tableau</span>
+                <span>SQL</span>
+                <span>EDA</span>
+              </div>
+              <div class="project-insight">
+                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong>
+                Two regional hubs accounted for 52% of late shipments during peak seasonal demand spikes.
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/your-username/supply-chain-analytics" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://your-demo-link-5.example.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6 -->
+          <article class="project-card glass-card reveal" data-tools="Python Data Visualization">
+            <div class="project-image-wrap">
+              <!-- REPLACE SCREENSHOT: images/project6.png -->
+              <img src="images/project6.png" alt="Marketing Campaign ROI & Attribution Analysis screenshot" class="project-img" />
+              <span class="project-num">06</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Marketing Channel ROI &amp; CAC Payback Analysis</h3>
+              <p class="project-desc">
+                Cleaned multi-channel campaign datasets in Python and compared Customer Acquisition Cost (CAC) against LTV across acquisition sources.
+              </p>
+              <div class="project-tools">
+                <span>Python</span>
+                <span>Data Visualization</span>
+                <span>EDA</span>
+              </div>
+              <div class="project-insight">
+                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong>
+                Organic search and referral channels achieved 2.1x higher LTV-to-CAC ratios than broad paid social campaigns.
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/your-username/marketing-roi-analysis" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://your-demo-link-6.example.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 7 -->
+          <article class="project-card glass-card reveal" data-tools="SQL Power BI Excel">
+            <div class="project-image-wrap">
+              <!-- REPLACE SCREENSHOT: images/project7.png -->
+              <img src="images/project7.png" alt="HR Workforce & Attrition Insights Dashboard screenshot" class="project-img" />
+              <span class="project-num">07</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Workforce Headcount &amp; Attrition Insights Dashboard</h3>
+              <p class="project-desc">
+                Explored employee tenure, department turnover, compensation bands, and promotion velocity to surface retention risk patterns.
+              </p>
+              <div class="project-tools">
+                <span>SQL</span>
+                <span>Power BI</span>
+                <span>Excel</span>
+              </div>
+              <div class="project-insight">
+                <strong><i class="fas fa-lightbulb"></i> Key Insight:</strong>
+                Early-tenure attrition peaked between months 6 and 14, highlighting onboarding and growth-path opportunities.
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/your-username/hr-attrition-dashboard" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://your-demo-link-7.example.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION & CERTIFICATIONS SECTION -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Education &amp; Certifications</span>
+          <h2 class="section-title">Academic &amp; <span class="gradient-text">Credential Milestones</span></h2>
+          <p class="section-subtitle">
+            <!-- EDIT EDUCATION & CERTIFICATIONS SUBTITLE HERE -->
+            Formal training and industry credentials supporting data analysis and business intelligence.
+          </p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- EDIT YOUR EDUCATION DETAILS HERE -->
+          <div class="edu-column glass-card reveal">
+            <div class="column-heading">
+              <i class="fas fa-university"></i>
+              <h3>Education</h3>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-date">2021 – 2025</span>
+              <h4>Bachelor of Science in Data Analytics</h4>
+              <p class="org-name">State University &bull; GPA: 3.8 / 4.0</p>
+              <p class="timeline-desc">
+                Focused on relational databases, statistical inference, data visualization, and applied analytics capstone projects.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span class="timeline-date">Relevant Coursework</span>
+              <h4>Quantitative &amp; Computing Foundations</h4>
+              <p class="org-name">Core Modules</p>
+              <p class="timeline-desc">
+                Database Management Systems (SQL), Applied Statistics, Data Wrangling with Python, and Business Intelligence.
+              </p>
+            </div>
+          </div>
+
+          <!-- EDIT YOUR CERTIFICATIONS HERE -->
+          <div class="cert-column glass-card reveal">
+            <div class="column-heading">
+              <i class="fas fa-certificate"></i>
+              <h3>Certifications</h3>
+            </div>
+
+            <div class="cert-item">
+              <span class="cert-badge">Verified</span>
+              <h4>Microsoft Certified: Power BI Data Analyst Associate</h4>
+              <p class="org-name">Microsoft &bull; Data Modeling, DAX &amp; Visualization</p>
+            </div>
+
+            <div class="cert-item">
+              <span class="cert-badge">Verified</span>
+              <h4>Google Data Analytics Professional Certificate</h4>
+              <p class="org-name">Coursera / Google &bull; SQL, R/Python, Spreadsheets &amp; Viz</p>
+            </div>
+
+            <div class="cert-item">
+              <span class="cert-badge">Verified</span>
+              <h4>SQL for Data Analysis &amp; Business Intelligence</h4>
+              <p class="org-name">Analytics Training Program &bull; Joins, CTEs &amp; Window Functions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. RESUME SECTION -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="resume-banner glass-card reveal">
+          <div class="resume-text">
+            <span class="section-tag">Resume / CV</span>
+            <h2>Want the Full <span class="gradient-text">Resume Overview</span>?</h2>
+            <!-- EDIT RESUME SUMMARY TEXT HERE -->
+            <p>
+              Download my latest resume (<strong>resume.pdf</strong>) for a complete summary of my
+              technical stack, analytics projects, education, and certifications.
+            </p>
+          </div>
+          <div class="resume-cta">
+            <!-- EDIT RESUME FILE PATH & DOWNLOAD FILENAME HERE -->
+            <a href="resume.pdf" download="Alex_Rivera_Data_Analyst_Resume.pdf" class="btn btn-primary btn-lg">
+              <i class="fas fa-file-pdf"></i> Download Resume (PDF)
+            </a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+              <i class="fas fa-eye"></i> Open in Browser
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let&apos;s <span class="gradient-text">Connect</span></h2>
+          <p class="section-subtitle">
+            <!-- EDIT CONTACT SUBTITLE HERE -->
+            Have a Data Analyst role, analytics project, or team opportunity in mind? Reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- EDIT CONTACT CARDS HERE -->
+          <a href="mailto:alex.rivera.analytics@example.com" class="contact-card glass-card reveal">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <h3>Email</h3>
+            <p>alex.rivera.analytics@example.com</p>
+            <span class="contact-action">Send an Email <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card glass-card reveal"
+          >
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/your-profile</p>
+            <span class="contact-action">Connect on LinkedIn <i class="fas fa-arrow-right"></i></span>
+          </a>
+
+          <a
+            href="https://github.com/your-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card glass-card reveal"
+          >
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <h3>GitHub</h3>
+            <p>github.com/your-username</p>
+            <span class="contact-action">Explore Repositories <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <!-- EDIT FOOTER COPYRIGHT HERE -->
+      <p>&copy; <span id="currentYear"></span> Alex Rivera. All rights reserved.</p>
+      <p class="footer-note">Built with HTML, CSS &amp; Vanilla JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
